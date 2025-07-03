@@ -9,47 +9,47 @@ import BonusTab from "@/components/BonusTab";
 const Index = () => {
   return (
     <div className="min-h-screen bg-black">
-      <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
-        <div className="text-center mb-6 sm:mb-8">
-          <h1 className="text-2xl sm:text-4xl font-bold text-[#f9a811] mb-2 sm:mb-4 px-2">
+      <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-8">
+        <div className="text-center mb-4 sm:mb-8">
+          <h1 className="text-xl sm:text-4xl font-bold text-[#f9a811] mb-2 sm:mb-4 px-2 leading-tight">
             O Gerador Perdido de Thomas Edison
           </h1>
-          <p className="text-sm sm:text-lg text-white max-w-2xl mx-auto px-2">
+          <p className="text-xs sm:text-lg text-white max-w-2xl mx-auto px-2">
             Descubra os segredos por trás da tecnologia que pode revolucionar sua conta de energia
           </p>
         </div>
 
         <Tabs defaultValue="inicio" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-5 mb-4 sm:mb-8 bg-black border-2 border-[#f9a811] h-auto gap-1 p-1">
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-5 mb-3 sm:mb-8 bg-black border-2 border-[#f9a811] h-auto gap-0.5 sm:gap-1 p-0.5 sm:p-1">
             <TabsTrigger 
               value="inicio" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-xs sm:text-sm py-2 px-1 sm:px-3"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
               Início
             </TabsTrigger>
             <TabsTrigger 
               value="historia" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-xs sm:text-sm py-2 px-1 sm:px-3"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
-              História de Edison
+              História
             </TabsTrigger>
             <TabsTrigger 
               value="economizar" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-xs sm:text-sm py-2 px-1 sm:px-3 col-span-2 sm:col-span-1"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
-              Economizar Energia
+              Economizar
             </TabsTrigger>
             <TabsTrigger 
               value="construir" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-xs sm:text-sm py-2 px-1 sm:px-3 col-span-2 sm:col-span-1"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
-              Como Construir
+              Construir
             </TabsTrigger>
             <TabsTrigger 
               value="bonus" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-xs sm:text-sm py-2 px-1 sm:px-3 col-span-2 sm:col-span-1"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
-              BÓNUS INCRÍVEIS
+              BÓNUS
             </TabsTrigger>
           </TabsList>
 
