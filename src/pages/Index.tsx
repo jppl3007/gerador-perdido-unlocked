@@ -4,6 +4,7 @@ import InicioTab from "@/components/InicioTab";
 import HistoriaTab from "@/components/HistoriaTab";
 import EconomizarTab from "@/components/EconomizarTab";
 import ConstruirTab from "@/components/ConstruirTab";
+import BonusTab from "@/components/BonusTab";
 
 const Index = () => {
   return (
@@ -19,7 +20,7 @@ const Index = () => {
         </div>
 
         <Tabs defaultValue="inicio" className="w-full">
-          <TabsList className="grid w-full grid-cols-4 mb-8 bg-black border-2 border-[#f9a811]">
+          <TabsList className="grid w-full grid-cols-5 mb-8 bg-black border-2 border-[#f9a811]">
             <TabsTrigger 
               value="inicio" 
               className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10"
@@ -44,6 +45,12 @@ const Index = () => {
             >
               Como Construir
             </TabsTrigger>
+            <TabsTrigger 
+              value="bonus" 
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10"
+            >
+              BÓNUS INCRÍVEIS
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="inicio">
@@ -60,6 +67,10 @@ const Index = () => {
 
           <TabsContent value="construir">
             <ConstruirTab />
+          </TabsContent>
+
+          <TabsContent value="bonus">
+            <BonusTab />
           </TabsContent>
         </Tabs>
       </div>
