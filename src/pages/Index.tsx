@@ -32,16 +32,10 @@ const Index = () => {
               🏠 Início
             </TabsTrigger>
             <TabsTrigger 
-              value="construir" 
-              className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-slate-300 hover:text-white transition-colors"
-            >
-              🔧 Como Construir
-            </TabsTrigger>
-            <TabsTrigger 
               value="historia" 
               className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-slate-300 hover:text-white transition-colors"
             >
-              📚 História de Tesla
+              📚 História de Edison
             </TabsTrigger>
             <TabsTrigger 
               value="economizar" 
@@ -49,20 +43,26 @@ const Index = () => {
             >
               💡 Economizar Energia
             </TabsTrigger>
+            <TabsTrigger 
+              value="construir" 
+              className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-slate-300 hover:text-white transition-colors"
+            >
+              🔧 Como Construir
+            </TabsTrigger>
           </TabsList>
 
           <div className="mt-8">
             <TabsContent value="inicio">
               <InicioTab />
             </TabsContent>
-            <TabsContent value="construir">
-              <ConstruirTab />
-            </TabsContent>
             <TabsContent value="historia">
               <HistoriaTab />
             </TabsContent>
             <TabsContent value="economizar">
               <EconomizarTab />
+            </TabsContent>
+            <TabsContent value="construir">
+              <ConstruirTab />
             </TabsContent>
           </div>
         </Tabs>
