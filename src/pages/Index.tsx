@@ -41,7 +41,7 @@ const Index = () => {
             </TabsTrigger>
             <TabsTrigger 
               value="construir" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-xs sm:text-sm py-2 px-1 sm:px-3"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-xs sm:text-sm py-2 px-1 sm:px-3 col-span-2 sm:col-span-1"
             >
               Como Construir
             </TabsTrigger>
