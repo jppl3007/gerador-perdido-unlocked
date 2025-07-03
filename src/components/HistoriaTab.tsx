@@ -189,7 +189,7 @@ const HistoriaTab = () => {
             {/* Passo 4: A Guerra das Correntes */}
             <AccordionItem value="step-4" className="bg-slate-700/30 rounded-lg border border-purple-500/20">
               <AccordionTrigger className="px-4 py-3 text-white hover:text-purple-400">
-                <span className="text-lg font-semibold">⚔️ Passo 4: A Guerra das Correntes - Edison vs Tesla e Westinghouse</span>
+                <span className="text-lg font-semibold">⚔️ Passo 4: A Guerra das Correntes - Edison vs Thomas Edison e Westinghouse</span>
               </AccordionTrigger>
               <AccordionContent className="px-4 pb-4">
                 <div className="space-y-6">
@@ -211,7 +211,7 @@ const HistoriaTab = () => {
                     <div className="bg-green-900/30 p-4 rounded-lg border border-green-500/30">
                       <h3 className="text-green-400 font-bold text-lg mb-3">⚡ Corrente Alternada (AC)</h3>
                       <p className="text-slate-300 text-sm">
-                        Tesla e Westinghouse promoviam a AC, superior para longas distâncias e fácil de transformar. 
+                        Nikola Tesla e Westinghouse promoviam a AC, superior para longas distâncias e fácil de transformar. 
                         Acabou vencendo a "Guerra" devido à sua superioridade técnica.
                       </p>
                     </div>
@@ -276,9 +276,9 @@ const HistoriaTab = () => {
                   </div>
                   
                   <div className="bg-slate-800/40 p-4 rounded-lg border border-purple-500/20">
-                    <h3 className="text-purple-400 font-bold text-lg mb-3">🤝 O Caso Tesla</h3>
+                    <h3 className="text-purple-400 font-bold text-lg mb-3">🤝 O Caso Thomas Edison</h3>
                     <p className="text-slate-300">
-                      Tesla, que trabalhou brevemente para Edison, alegou que lhe foi prometida uma grande soma de dinheiro 
+                      Nikola Tesla, que trabalhou brevemente para Edison, alegou que lhe foi prometida uma grande soma de dinheiro 
                       por melhorias nos geradores DC de Edison, mas que a promessa nunca foi cumprida, levando à sua demissão 
                       e ao início da sua própria jornada de inovação com a AC.
                     </p>
