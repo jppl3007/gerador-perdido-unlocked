@@ -73,20 +73,6 @@ const InicioTab = () => {
           </CardContent>
         </Card>
       </div>
-
-      {/* Content Placeholder */}
-      <Card className="bg-black border-[#f9a811] border-2">
-        <CardHeader>
-          <CardTitle className="text-[#f9a811]">📝 Seu Conteúdo Aqui</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-white">
-            Esta seção está pronta para receber seu conteúdo personalizado. 
-            Você pode adicionar textos, imagens, vídeos e qualquer material que desejar 
-            para a aba inicial do seu infoproduto.
-          </p>
-        </CardContent>
-      </Card>
     </div>
   );
 };
