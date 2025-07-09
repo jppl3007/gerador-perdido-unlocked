@@ -49,7 +49,7 @@ const Index = () => {
               value="bonus" 
               className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
-              BÓNUS
+              BÔNUS
             </TabsTrigger>
           </TabsList>
 
