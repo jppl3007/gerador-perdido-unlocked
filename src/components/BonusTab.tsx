@@ -41,7 +41,7 @@ const BonusTab = () => {
       <Card className="bg-black border-[#f9a811] border-2 backdrop-blur-sm">
         <CardHeader className="text-center pb-4 sm:pb-6 px-3 sm:px-6">
           <CardTitle className="text-lg sm:text-3xl font-bold text-[#f9a811] mb-2 sm:mb-4">
-            🎁 BÓNUS INCRÍVEIS
+            🎁 BÔNUS INCRÍVEIS
           </CardTitle>
           <CardDescription className="text-sm sm:text-xl text-white">
             Acesse conteúdos exclusivos que complementam seu aprendizado
