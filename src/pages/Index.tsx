@@ -5,10 +5,13 @@ import HistoriaTab from "@/components/HistoriaTab";
 import EconomizarTab from "@/components/EconomizarTab";
 import ConstruirTab from "@/components/ConstruirTab";
 import BonusTab from "@/components/BonusTab";
+import WelcomePopup from "@/components/WelcomePopup";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-black">
+      <WelcomePopup />
+      
       <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-8">
         <div className="text-center mb-4 sm:mb-8">
           <h1 className="text-xl sm:text-4xl font-bold text-[#f9a811] mb-2 sm:mb-4 px-2 leading-tight">
@@ -20,34 +23,34 @@ const Index = () => {
         </div>
 
         <Tabs defaultValue="inicio" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-5 mb-3 sm:mb-8 bg-black border-2 border-[#f9a811] h-auto gap-0.5 sm:gap-1 p-0.5 sm:p-1">
+          <TabsList className="grid w-full grid-cols-3 sm:grid-cols-5 mb-3 sm:mb-8 bg-black border-2 border-[#f9a811] h-auto gap-0.5 sm:gap-1 p-0.5 sm:p-1">
             <TabsTrigger 
               value="inicio" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[9px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
               Início
             </TabsTrigger>
             <TabsTrigger 
               value="historia" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[9px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
               História
             </TabsTrigger>
             <TabsTrigger 
               value="economizar" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[9px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
               Economizar
             </TabsTrigger>
             <TabsTrigger 
               value="construir" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[9px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
               Construir
             </TabsTrigger>
             <TabsTrigger 
               value="bonus" 
-              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[10px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
+              className="data-[state=active]:bg-[#f9a811] data-[state=active]:text-black text-white hover:bg-[#f9a811]/10 text-[9px] sm:text-sm py-1.5 sm:py-2 px-1 sm:px-3 leading-tight"
             >
               BÔNUS
             </TabsTrigger>
