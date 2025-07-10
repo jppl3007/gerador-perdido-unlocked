@@ -47,17 +47,17 @@ const WelcomePopup = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-md mx-auto bg-black border-2 border-[#f9a811] p-6 text-center">
+      <DialogContent className="max-w-md mx-auto bg-black border-2 border-green-500 p-6 text-center">
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute right-4 top-4 text-white hover:text-[#f9a811] transition-colors"
+          className="absolute right-4 top-4 text-white hover:text-green-500 transition-colors"
         >
           <X className="h-4 w-4" />
         </button>
         
         <DialogHeader className="space-y-4">
           <div className="text-4xl">🎉</div>
-          <DialogTitle className="text-xl font-bold text-[#f9a811] leading-tight">
+          <DialogTitle className="text-xl font-bold text-[#f9a811] leading-tight text-center">
             Parabéns!
           </DialogTitle>
         </DialogHeader>
@@ -87,7 +87,7 @@ const WelcomePopup = () => {
 
           <Button 
             onClick={handleRedirect}
-            className="w-full bg-[#f9a811] hover:bg-[#e09710] text-black font-bold py-3 text-lg animate-pulse"
+            className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 text-lg animate-pulse"
           >
             🚀 GARANTIR MINHA UNIDADE AGORA!
           </Button>
