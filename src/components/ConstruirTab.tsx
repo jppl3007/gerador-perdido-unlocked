@@ -6,11 +6,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const ConstruirTab = () => {
   return (
     <div className="space-y-8">
-      {/* Header */}
+      {/* Header Gerador Edison */}
       <Card className="bg-gradient-to-r from-orange-900/50 to-red-900/50 border-orange-500/20 backdrop-blur-sm">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-bold text-white mb-4">
-            🔧 Manual do Gerador Esquecido
+            🔧 Manual do Gerador Esquecido (Avançado)
           </CardTitle>
           <CardDescription className="text-xl text-slate-300">
             Guia completo para construir seu próprio gerador de energia portátil inspirado nos planos originais de Thomas Edison
@@ -25,10 +25,29 @@ const ConstruirTab = () => {
         </CardContent>
       </Card>
 
-      {/* Passos do Manual */}
+      {/* Header Gerador Simples */}
+      <Card className="bg-gradient-to-r from-green-900/50 to-blue-900/50 border-green-500/20 backdrop-blur-sm">
+        <CardHeader className="text-center">
+          <CardTitle className="text-3xl font-bold text-white mb-4">
+            ⚡ Gerador Simples de Baixo Custo
+          </CardTitle>
+          <CardDescription className="text-xl text-slate-300">
+            Versão simplificada para iniciantes - construa um gerador básico com menos de R$ 100
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="text-center">
+          <p className="text-slate-300 text-lg">
+            Uma alternativa mais simples e econômica para quem quer começar com pequenos projetos. 
+            Ideal para carregar celulares, ligar pequenas lâmpadas LED e funcionar como projeto educativo 
+            ou fonte de energia para emergências básicas.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Passos do Manual Avançado */}
       <Card className="bg-slate-800/50 border-orange-500/20 backdrop-blur-sm">
         <CardHeader>
-          <CardTitle className="text-orange-400 text-2xl">📋 Passos para Construir o Gerador</CardTitle>
+          <CardTitle className="text-orange-400 text-2xl">📋 Gerador Esquecido (Avançado)</CardTitle>
           <CardDescription className="text-slate-300">
             Clique em cada passo para ver as instruções detalhadas
           </CardDescription>
@@ -449,6 +468,252 @@ const ConstruirTab = () => {
                       na direção de um estilo de vida mais sustentável e autossuficiente. Lembre-se de que a experiência é a melhor professora. 
                       À medida que utiliza o seu gerador, você desenvolverá um entendimento mais profundo do seu funcionamento.
                     </p>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+          </Accordion>
+        </CardContent>
+      </Card>
+
+      {/* Gerador Simples */}
+      <Card className="bg-slate-800/50 border-green-500/20 backdrop-blur-sm">
+        <CardHeader>
+          <CardTitle className="text-green-400 text-2xl">⚡ Gerador Simples (Projeto Básico)</CardTitle>
+          <CardDescription className="text-slate-300">
+            Versão simplificada para iniciantes - construa um gerador básico com menos de R$ 100
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            
+            {/* Benefícios do Gerador Simples */}
+            <AccordionItem value="simple-1" className="bg-slate-700/30 rounded-lg border border-green-500/20">
+              <AccordionTrigger className="px-4 py-3 text-white hover:text-green-400">
+                <span className="text-lg font-semibold">🎯 Benefícios do Gerador Simples</span>
+              </AccordionTrigger>
+              <AccordionContent className="px-4 pb-4">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">💸 Super Econômico</h3>
+                    <p className="text-slate-300 mb-4">Construa com menos de R$ 100 usando peças facilmente encontradas.</p>
+                    
+                    <h3 className="text-white font-bold text-lg mb-3">🎓 Educativo</h3>
+                    <p className="text-slate-300 mb-4">Perfeito para aprender os conceitos básicos de geração de energia.</p>
+                    
+                    <h3 className="text-white font-bold text-lg mb-3">🔋 Portátil</h3>
+                    <p className="text-slate-300">Leve e compacto, ideal para camping ou emergências básicas.</p>
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">⚡ Aplicações</h3>
+                    <ul className="text-slate-300 space-y-2">
+                      <li>• Carregar celulares e tablets</li>
+                      <li>• Alimentar lâmpadas LED de baixa potência</li>
+                      <li>• Rádios portáteis</li>
+                      <li>• Pequenos ventiladores USB</li>
+                      <li>• Projetos escolares e demonstrações</li>
+                    </ul>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Materiais do Gerador Simples */}
+            <AccordionItem value="simple-2" className="bg-slate-700/30 rounded-lg border border-green-500/20">
+              <AccordionTrigger className="px-4 py-3 text-white hover:text-green-400">
+                <span className="text-lg font-semibold">🛠️ Materiais Necessários</span>
+              </AccordionTrigger>
+              <AccordionContent className="px-4 pb-4">
+                <div className="overflow-x-auto mb-6">
+                  <table className="w-full text-slate-300">
+                    <thead>
+                      <tr className="border-b border-green-500/20">
+                        <th className="text-left py-2 text-green-400">Item</th>
+                        <th className="text-left py-2 text-green-400">Descrição</th>
+                        <th className="text-left py-2 text-green-400">Preço Aproximado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-slate-700">
+                        <td className="py-2 font-semibold">Motor DC 12V</td>
+                        <td className="py-2">Motor de limpador de para-brisa ou similar</td>
+                        <td className="py-2">R$ 20-30</td>
+                      </tr>
+                      <tr className="border-b border-slate-700">
+                        <td className="py-2 font-semibold">Ímãs de neodímio</td>
+                        <td className="py-2">4-6 ímãs pequenos e potentes</td>
+                        <td className="py-2">R$ 15-25</td>
+                      </tr>
+                      <tr className="border-b border-slate-700">
+                        <td className="py-2 font-semibold">Bateria 12V</td>
+                        <td className="py-2">Bateria de moto ou selada pequena</td>
+                        <td className="py-2">R$ 30-50</td>
+                      </tr>
+                      <tr className="border-b border-slate-700">
+                        <td className="py-2 font-semibold">Hélice ou roda</td>
+                        <td className="py-2">Para captar vento ou movimento manual</td>
+                        <td className="py-2">R$ 10-15</td>
+                      </tr>
+                      <tr className="border-b border-slate-700">
+                        <td className="py-2 font-semibold">Fios e conectores</td>
+                        <td className="py-2">Cabos para conexões elétricas</td>
+                        <td className="py-2">R$ 5-10</td>
+                      </tr>
+                      <tr className="border-b border-slate-700">
+                        <td className="py-2 font-semibold">Base de madeira</td>
+                        <td className="py-2">Suporte para montar os componentes</td>
+                        <td className="py-2">R$ 5-10</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2 font-semibold">LED ou USB</td>
+                        <td className="py-2">Para demonstrar a geração de energia</td>
+                        <td className="py-2">R$ 5-10</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div className="bg-green-900/30 p-4 rounded-lg border border-green-500/30">
+                  <p className="text-slate-300 text-center">
+                    <strong>Total estimado: R$ 90-150</strong> - Uma fração do custo do gerador avançado!
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Montagem do Gerador Simples */}
+            <AccordionItem value="simple-3" className="bg-slate-700/30 rounded-lg border border-green-500/20">
+              <AccordionTrigger className="px-4 py-3 text-white hover:text-green-400">
+                <span className="text-lg font-semibold">🔧 Montagem Passo a Passo</span>
+              </AccordionTrigger>
+              <AccordionContent className="px-4 pb-4">
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">1. Preparar o Motor</h3>
+                    <p className="text-slate-300">
+                      Retire o motor DC 12V de um limpador de para-brisa usado. Limpe bem e teste se está funcionando. 
+                      Este motor funcionará como dínamo quando girado manualmente ou pelo vento.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">2. Instalar os Ímãs</h3>
+                    <p className="text-slate-300">
+                      Cole os ímãs de neodímio ao redor do eixo do motor, alternando os polos (N-S-N-S). 
+                      Isso aumentará a eficiência da geração de energia quando o eixo girar.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">3. Montar a Base</h3>
+                    <p className="text-slate-300">
+                      Fixe o motor em uma base de madeira robusta. Certifique-se de que o eixo possa girar livremente. 
+                      Deixe espaço para a bateria e outros componentes.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">4. Instalar a Hélice</h3>
+                    <p className="text-slate-300">
+                      Conecte uma hélice ou roda ao eixo do motor. Para testes manuais, use uma manivela. 
+                      Para uso com vento, use uma hélice leve e bem balanceada.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">5. Fazer as Conexões</h3>
+                    <p className="text-slate-300">
+                      Conecte os fios do motor à bateria através de um diodo (para evitar descarga reversa). 
+                      Adicione um LED ou saída USB para demonstrar que está gerando energia.
+                    </p>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Teste e Operação */}
+            <AccordionItem value="simple-4" className="bg-slate-700/30 rounded-lg border border-green-500/20">
+              <AccordionTrigger className="px-4 py-3 text-white hover:text-green-400">
+                <span className="text-lg font-semibold">🎮 Teste e Operação</span>
+              </AccordionTrigger>
+              <AccordionContent className="px-4 pb-4">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">✅ Testando o Sistema</h3>
+                    <ol className="text-slate-300 space-y-2">
+                      <li>1. Gire a hélice ou manivela manualmente</li>
+                      <li>2. Observe se o LED acende ou se há voltagem na saída</li>
+                      <li>3. Use um multímetro para medir a voltagem gerada</li>
+                      <li>4. Teste com diferentes velocidades de rotação</li>
+                    </ol>
+                    
+                    <h3 className="text-white font-bold text-lg mb-3 mt-6">💡 Dicas de Uso</h3>
+                    <ul className="text-slate-300 space-y-2">
+                      <li>• Gire em velocidade constante para melhor resultado</li>
+                      <li>• Evite sobrecarregar o sistema</li>
+                      <li>• Use em dias ventosos se for eólico</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">⚡ Resultados Esperados</h3>
+                    <ul className="text-slate-300 space-y-2">
+                      <li>• Voltagem: 6-12V dependendo da rotação</li>
+                      <li>• Corrente: 100-500mA</li>
+                      <li>• Potência: 1-5W aproximadamente</li>
+                      <li>• Suficiente para LEDs e carregar celular lentamente</li>
+                    </ul>
+                    
+                    <h3 className="text-white font-bold text-lg mb-3 mt-6">🔧 Melhorias Possíveis</h3>
+                    <ul className="text-slate-300 space-y-2">
+                      <li>• Adicionar regulador de voltagem</li>
+                      <li>• Usar motor brushless para maior eficiência</li>
+                      <li>• Construir caixa de proteção</li>
+                      <li>• Adicionar indicadores visuais</li>
+                    </ul>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Segurança do Gerador Simples */}
+            <AccordionItem value="simple-5" className="bg-red-900/30 rounded-lg border border-red-500/30">
+              <AccordionTrigger className="px-4 py-3 text-white hover:text-red-400">
+                <span className="text-lg font-semibold">⚠️ Segurança e Cuidados</span>
+              </AccordionTrigger>
+              <AccordionContent className="px-4 pb-4">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">🧲 Cuidados com Ímãs</h3>
+                    <ul className="text-slate-300 space-y-2">
+                      <li>• Ímãs de neodímio são muito fortes</li>
+                      <li>• Mantenha longe de cartões magnéticos</li>
+                      <li>• Cuidado para não prenderem os dedos</li>
+                      <li>• Podem danificar equipamentos eletrônicos</li>
+                    </ul>
+                    
+                    <h3 className="text-white font-bold text-lg mb-3 mt-6">⚡ Segurança Elétrica</h3>
+                    <ul className="text-slate-300 space-y-2">
+                      <li>• Use sempre diodos de proteção</li>
+                      <li>• Não curto-circuite as saídas</li>
+                      <li>• Verifique polaridade antes de conectar</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-3">🔧 Segurança Mecânica</h3>
+                    <ul className="text-slate-300 space-y-2">
+                      <li>• Fixe bem todos os componentes</li>
+                      <li>• Cuidado com partes móveis</li>
+                      <li>• Use óculos de proteção ao cortar/furar</li>
+                      <li>• Mantenha área de trabalho limpa</li>
+                    </ul>
+                    
+                    <h3 className="text-white font-bold text-lg mb-3 mt-6">📋 Dicas Importantes</h3>
+                    <ul className="text-slate-300 space-y-2">
+                      <li>• Este é um projeto educativo/demonstrativo</li>
+                      <li>• Não substituirá energia da rede</li>
+                      <li>• Ideal para entender conceitos básicos</li>
+                      <li>• Sempre supervisione crianças</li>
+                    </ul>
                   </div>
                 </div>
               </AccordionContent>
